@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
+}
+
+body, .carousel-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.carousel-wrapper {
+    justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: #eeeeee;
+    width: 800px;
+    height: 700px;
+}
+
+.next-button,
+.prev-button {
+    cursor: pointer;
+    font-size: 40px;
+    user-select: none;
+}
+
+.image {
+    width: 600px;
+}
+.image img {
+    width: 100%;
+}
+.image h1 {
+    font-size: 18px;
+    text-align: center;
+}
