@@ -9,7 +9,8 @@ request.onload = function() {
     images = request.response;
     getImageInfo(images, currentImg);
 };
-const image = document.createElement('img');
+const image = new Image(600, 600); // bit better for preload
+//const image = document.createElement('img'); // alternative
 const title = document.createElement('h1');
 const prevButton = document.querySelector('.prev-button');
 const nextButton = document.querySelector('.next-button');
@@ -17,7 +18,8 @@ document.querySelector('.image').appendChild(image);
 document.querySelector('.image').appendChild(title);
 
 function getImageInfo(json, currentImg) {
-    image.setAttribute('src', json[currentImg].url);
+    image.src = json[currentImg].url;
+    //image.setAttribute('src', json[currentImg].url); // alternative
     title.textContent = json[currentImg].title;
 }
 

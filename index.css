@@ -35,7 +35,7 @@ body, .carousel-wrapper {
 }
 .image img {
     width: 100%;
-}
+} /* for alternative variant */
 .image h1 {
     font-size: 18px;
     text-align: center;
