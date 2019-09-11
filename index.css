@@ -30,13 +30,13 @@ body, .carousel-wrapper {
     user-select: none;
 }
 
-.image {
+#image-wrapper {
     width: 600px;
 }
-.image img {
+#image-wrapper img {
     width: 100%;
 } /* for alternative variant */
-.image h1 {
+#image-wrapper h1 {
     font-size: 18px;
     text-align: center;
 }
