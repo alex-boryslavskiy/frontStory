@@ -9,9 +9,6 @@ request.onload = function() {
     images = request.response;
     getImageInfo(images, currentImg);
 };
-/*const imageWrapper = document.createElement('div');
-imageWrapper.className = 'image-' + (currentImg + 1);
-document.querySelector('.image-wrapper').appendChild(imageWrapper);*/ // start to do
 const image = new Image(600, 600); // bit better for preload
 //const image = document.createElement('img'); // alternative
 const title = document.createElement('h1');
