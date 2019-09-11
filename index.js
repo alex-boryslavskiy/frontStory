@@ -1,5 +1,7 @@
 const CAROUSEL_TIMER = 2000;
 const API_URL = 'https://jsonplaceholder.typicode.com/photos';
+
+/*FIRST VARIANT*/
 /*window.onload = async function () {
     let currentImg = 0;
     let images = [];
@@ -51,7 +53,9 @@ const API_URL = 'https://jsonplaceholder.typicode.com/photos';
         clearInterval(imageInterval);
     });
 };*/
+/*FIRST VARIANT*/
 
+/*SECOND VARIANT*/
 window.onload = async () => {
     const C = new Carousel(document.getElementById('image-wrapper'));
     const response = await fetch(API_URL);
@@ -121,4 +125,4 @@ class Carousel {
         }
     }
 }
-
+/*SECOND VARIANT*/
